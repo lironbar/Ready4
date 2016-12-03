@@ -1,0 +1,152 @@
+/* app.css */
+
+/* BASIC STYLINGS
+============================================================================= */
+html body {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+#form-cont {
+  background: #0d2c3d;
+  color: #95b1bc;
+}
+
+label:hover {
+  color: #00bdff;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.marginTop {
+  margin-top: 20px;
+}
+
+.header {
+  padding: 30px 0 20px;
+}
+
+.border1 {
+  border: 1px solid rgba(255,255,255, .25);
+-webkit-background-clip: padding-box; /* for Safari */
+background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.qBox {
+  padding: 0px 35px 0px 35px;
+}
+
+.qMargin {
+  margin: 20px 0px 10px 0px;
+}
+
+.qPadding {
+  padding: 30px 0px 30px 0px;
+}
+
+.borderIn {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+#borderOpacity {
+  opacity: 0.25
+}
+
+.containerIn {
+  padding-right: 38px;
+  padding-left: 38px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn-next {
+  background-color: #1CC2f3;
+  color: #fff;
+  padding: 7px 44px;
+  text-align: center;
+  font-weight: 300;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  margin: 28px 0px 13px 0px;
+}
+
+.btn-next:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: .65;
+}
+
+/* FORM STYLINGS
+============================================================================= */
+#form-container {
+  background:#2f2f2f;
+  margin-bottom:20px;
+  border-radius:5px;
+
+}
+#form-container .page-header {
+  background: #151515;
+  margin: 0;
+  padding: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* NUMBERED BUTTONS
+============================================================================= */
+
+#status-buttons a {
+  color:#95b1bc;
+  display:inline-block;
+  font-size: 12px;
+  margin-right: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: none;
+  cursor: default;
+}
+
+#status-buttons a:hover {
+  text-decoration: none;
+}
+
+/* SPAN AS CIRCLED NUMBER
+============================================================================= */
+
+#status-buttons span {
+  color: #fff;
+  background: #066E91;
+  display: block;
+  height: 30px;
+  margin: 0 auto 10px;
+  padding-top: 5px;
+  width: 30px;
+  border-radius: 50%;
+  opacity: .8
+  }
+
+
+/* ACTIVE BUTTONS TURN LIGHT-BLUE
+============================================================================= */
+#status-buttons a.active span {
+  border: 2px solid #00bdff;
+  opacity: 1;
+}
+
+#status-buttons a.active {
+  color: #00bdff;
+}
+
+.glyphicon-circle-arrow-right {
+  color: white;
+  position: relative;
+  right: 6%;
+  z-index: 1;
+}

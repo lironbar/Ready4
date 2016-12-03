@@ -1,0 +1,40 @@
+
+<div ng-form="userform5" novalidate>
+
+  <div class="border1">
+    <div class="containerIn">
+
+      <div class="row ">
+        <div ng-bind-html="questions[4].question.body" class="qPadding">
+        </div>
+      </div>
+
+      <div id="borderOpacity">
+        <div class="borderIn">
+        </div>
+      </div>
+
+      <div ng-repeat="choice in questions[4].choices">
+        <div class="row qMargin">
+          <label class="col-xs-1">
+            <input type="radio" id="checkbox_id[{{$index}}]" name="q5" ng-model="userAnswers[4]" ng-value="{{$index+1}}" required>
+          </label>
+          <label for="checkbox_id[{{$index}}]" class="col-xs-11">
+            {{choice.body}}
+          </label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-xs-12">
+      <div class="col-xs-6 col-xs-offset-3 text-center">
+        <input id="btnMargin" value="Submit" type="button" ng-disabled="userform5.q5.$invalid" ui-sref="form.answers" class="btn-next"/>
+        <p ng-show="userform5.q5.$error.required">*Please select an answer</p>
+      </div>
+    </div>
+  </div>
+
+</div>
